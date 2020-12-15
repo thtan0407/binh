@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Caren</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-language" content="vi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico"/>
+	
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/animate.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+
+<header class="header">
+	<div class="header-banner d-none d-lg-block">
+		<div class="row">
+			<div class="col-7 text-right">
+				<div class="title">
+					<h3>Cập nhật mới nhất về Covid</h3>
+					<img class="text-decor-1" src="./assets/images/header/decor-1.svg">
+					<img class="text-decor-2" src="./assets/images/header/decor-2.svg">
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="link">
+					<a href="single-blog.html">
+						Tìm hiểu thêm
+					</a>
+					<img class="link-decor-1" src="./assets/images/header/decor-1.svg">
+					<img class="link-decor-2" src="./assets/images/header/decor-2.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom position-relative">
+		<div class="container container-full">
+			<div class="row align-items-lg-center">
+				<div class="col-lg-3">
+					<div class="header-bottom-logo">
+						<a class="d-none d-lg-block" href="index.html">
+							<img src="./assets/images/logo.svg" alt="Lorem ipsum dolor sit.">
+						</a>
+						<div class="row">
+							<div class="col-3">
+								<a href="tel:0909090909">
+									<img alt="phone"
+									     class="d-lg-none d-block phone animated tada infinite"
+									     width="22"
+									     src="./assets/images/phone.svg">
+								</a>
+							</div>
+							<div class="col-6 text-center logo">
+								<a class="d-block d-lg-none" href="index.html">
+									<img src="./assets/images/logo-mobile.svg" alt="Lorem ipsum dolor sit.">
+								</a>
+							</div>
+							<div class="col-3">
+								<div id="hamburger" class="hamburger">
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="header-bottom-navigation">
+						<ul id="hasMenu">
+							<li>
+								<a href="index.html">
+									<img src="./assets/images/menu/home-icon.svg" alt="">
+									Trang chủ
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/images/menu/care-service-icon.svg" alt="">
+									Các Dịch vụ
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul>
+									<li>
+										<a href="#">
+											Tất cả dịch vụ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Nhi khoa
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Khám sức khỏe định kì
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Khám tổng quát
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều dưỡng tại nhà
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Tim mạch
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Nội tiết
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Thận - Tiết niệu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Chăm sóc thai sản
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Chăm sóc sức khỏe thị lực
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Da liễu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Tầm soát ung thu di truyền
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Dị ứng - miễn dịch
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/images/menu/health-plans-icon.svg" alt="">
+									Gói chăm sóc
+									<i class="fal fa-angle-down"></i>
+								</a>
+								<ul>
+									<li>
+										<a href="#">
+											Caren Premium
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Gói thai sản
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Dành cho doanh nghiệp
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/images/menu/doctor-icon.svg" alt="">
+									Đội ngũ bác sĩ
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./assets/images/menu/blog-icon.svg" alt="">
+									Tin tức
+								</a>
+							</li>
+						</ul>
+						<div class="header-decor d-block d-lg-none">
+							<div class="inner">
+								<p class="title">
+									Bạn cần chúng tôi - Caren hỗ trợ? Liên hệ ngay
+								</p>
+								<div class="text-center">
+									<a href="#popupBooking" class="btn-style btn-light">Đặt hẹn lịch ngay</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-content d-block d-lg-none">
+		<div class="title">Ưu đãi 200.000đ cho lần khám đầu tiên.</div>
+		<a href="#popupBooking" data-toggle="modal">Đặt hẹn khám ngay</a>
+		<img src="./assets/images/menu/header-plus.svg" alt="">
+	</div>
+	<div class="header-overlay"></div>
+</header>
+
+<div id="main">
+	<div class="page-services">
+		<!-- Đội ngũ bác sĩ -->
+		<div class="content-area-health">
+			<div class="main">
+				<div class="_content">
+					<h3 class="title">Bạn thấy không khỏe?<br>Hãy để Caren chăm sóc cho bạn!</h3>
+					<p class="desc">
+						Tìm hiểu thêm về các dịch vụ chăm sóc sức khỏe của chúng tôi, từ cảm mạo thông thường đến các
+						bệnh
+						mạn
+						tính - các bác sĩ Jio thân thiện sẽ tận tình chăm sóc bạn và gia đình.
+					</p>
+					<ul class="list">
+						<li>
+							<div class="_icon">
+								<img src="./assets/images/stethoscope-icon.svg">
+								<h5>
+									Dịch vụ Bác sĩ & Điều dưỡng
+								</h5>
+							</div>
+						</li>
+						<li>
+							<div class="_icon">
+								<img src="./assets/images/lab-icon.svg">
+								<h5>
+									Lấy mẫu xét nghiệm
+								</h5>
+							</div>
+						</li>
+					</ul>
+					<div class="link">
+						<a href="dich-vu.html" class="btn-style btn-blue">
+							Tìm hiểu thêm
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="bg">
+				<img src="./assets/images/decor/decor-health-bg.svg" alt="">
+			</div>
+		</div>
+		<!-- /End đội ngũ bác sĩ -->
+		
+		<div class="block-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="main">
+							<div class="_content">
+								<h3 class="title">Các dịch vụ thăm khám của chúng tôi
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 mb-4">
+						<div class="service-item">
+							<div class="inner">
+								<img src="./assets/images/service/pediatrics.svg">
+								<h2 class="item-title">Nhi Khoa</h2>
+								<p class="item-desc">Chăm sóc, điều trị cho trẻ từ sơ sinh đến khi
+									trưởng thành.</p>
+							</div>
+							<div class="bottom">
+								<p class="price">500.000&nbsp;₫</p>
+								<div class="mx-auto mb-2 original-price">
+									<span>Giá Gốc</span>
+									<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+									<span>600.000&nbsp;₫</span>
+								</div>
+							</div>
+							<div class="bottom-overlay">
+								<h6 class="headline">Nhi Khoa</h6>
+								<div class="text-center button-group">
+									<div class="text-center">
+										<a href="#popupBooking" class="btn-style btn-light">
+											Đặt lịch khám tại nhà
+										</a>
+									</div>
+									<div class="text-center mt-3">
+										<a href="dich-vu.html" class="btn-style btn-green">
+											Tìm hiểu thêm
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Truyền thông nói về chúng tôi -->
+		<div class="content-area-media">
+			<div class="main">
+				<div class="_content">
+					<h3 class="title">Truyền thông nói <br>về Caren</h3>
+					<p class="desc">
+						Cùng khám phá những góc nhìn đa chiều từ các cơ quan truyền thông về Caren và hiểu hơn về cách
+						chúng tôi cải tiến dịch vụ chăm sóc sức khỏe.
+					</p>
+					<p class="desc">
+						Cùng khám phá những góc nhìn đa chiều từ các cơ quan truyền thông về Caren và hiểu hơn về cách
+						chúng tôi cải tiến dịch vụ chăm sóc sức khỏe.
+					</p>
+				</div>
+			</div>
+			<div class="video">
+				<video autoplay class="video-player" loop="true" muted="true"
+				       poster="https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.1.4/assets/images/video-posters/doctors-come-to-you-video-poster.jpg">
+					<source src="https://cdn.jiohealth.com/video/doctor/Our_Doctors_Come_to_You_Short_Ver_LQ.mp4"
+					        type="video/mp4">
+				</video>
+			</div>
+			<div class="bg">
+				<img src="./assets/images/decor/decor-media-bg.svg" alt="">
+			</div>
+		</div>
+		<!-- /End truyền thông nói về chúng tôi -->
+	</div>
+</div>
+<footer class="footer">
+	<div class="container container-full">
+		<div class="row footer-logo">
+			<div class="col-lg-12">
+				<a href="index.html">
+					<img src="./assets/images/logo-white.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="row footer-top">
+			<div class="col-lg-5 col-md-6 order-4 order-lg-1 d-none d-lg-block">
+				<div class="footer-list">
+					<ul>
+						<li>
+							<span>Điện thoại</span><a href="tel:0333851195">0333851195</a>
+						</li>
+						<li>
+							<span>Hotline</span><a href="tel:0333851195">0333851195</a>
+						</li>
+						<li>
+							<span>Email</span><a href="tel:0333851195">support@jiohealth.com</a>
+						</li>
+						<li>
+							<span>Copyright © 2018 Caren. Designed by </span><a
+								href="https://facebook.com/thtan0407">TES</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 order-1 order-lg-2">
+				<p class="title">Dịch vụ</p>
+				<div class="footer-list">
+					<ul>
+						<li>
+							<a href="">Hẹn Bác Sĩ, Điều Dưỡng Đến Nhà</a>
+						</li>
+						<li>
+							<a href="">Nhà Thuốc Trực Tuyến Jio</a>
+						</li>
+						<li>
+							<a href="">Jio Premium</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 order-2 order-lg-3">
+				<p class="title">Tìm hiểu thêm</p>
+				<div class="footer-list">
+					<ul>
+						<li>
+							<a href="">Đội Ngũ Bác Sĩ</a>
+						</li>
+						<li>
+							<a href="">Dịch Vụ Thăm Khám</a>
+						</li>
+						<li>
+							<a href="">Dành cho báo chí</a>
+						</li>
+						<li>
+							<a href="">Vị Trí Tuyển Dụng</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 order-3 order-lg-4">
+				<p class="title">Hỗ trợ khách hàng</p>
+				<div class="footer-list">
+					<ul>
+						<li>
+							<a href="">Câu Hỏi Thường Gặp</a>
+						</li>
+						<li>
+							<a href="">Chính Sách Bảo Mật</a>
+						</li>
+						<li>
+							<a href="">Chính Sách Hoạt Động</a>
+						</li>
+						<li>
+							<a href="">Liên hệ</a>
+						</li>
+						<li>
+							<a href="">Chính sách giải quyết khiếu nại</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer-bottom">
+			<div class="col-md-5">
+				<p class="title">CÔNG TY TNHH PHÒNG KHÁM ĐA KHOA Caren</p>
+				<p class="desc">
+					Giấy CNĐKDN 0309145924 đăng ký lần đầu ngày 06/07/2009, đăng ký thay đổi lần thứ 6 ngày 11/09/2019,
+					cấp bởi Sở KHĐT thành phố Hồ Chí Minh.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<p class="title">
+					Địa chỉ
+				</p>
+				<p class="desc">
+					30 Nguyễn Văn Lạc, Phường 19, Quận Bình Thạnh, TP.HCM
+				</p>
+				<p class="title">
+					Hãy theo dõi Caren tại
+				</p>
+				<div class="footer-social">
+					<ul>
+						<li>
+							<a href="">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer-register">
+					<a href="">
+						<img src="./assets/images/dathongbao.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/theme-script.js"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0"
+        nonce="3VofOiyE"></script>
+
+<a href="javascript:void(0)" id="return-to-top" style="display: none;">
+	<i class="far fa-long-arrow-alt-up"></i>
+</a>
+
+</body>
+</html>
