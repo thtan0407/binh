@@ -20,70 +20,78 @@
 </head>
 <body>
 
-<header class="header">
-	<div class="header-banner d-none d-lg-block">
-		<div class="row">
-			<div class="col-7 text-right">
-				<div class="title">
-					<h3>Cập nhật mới nhất về Covid</h3>
-					<img class="text-decor-1" src="./assets/images/header/decor-1.svg">
-					<img class="text-decor-2" src="./assets/images/header/decor-2.svg">
-				</div>
-			</div>
-			<div class="col-5">
-				<div class="link">
-					<a href="single-blog.html">
-						Tìm hiểu thêm
-					</a>
-					<img class="link-decor-1" src="./assets/images/header/decor-1.svg">
-					<img class="link-decor-2" src="./assets/images/header/decor-2.svg">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header-bottom position-relative">
+<header class="header d-flex flex-column">
+	<div class="header-top order-1 order-lg-1">
 		<div class="container container-full">
-			<div class="row align-items-lg-center">
-				<div class="col-lg-3">
-					<div class="header-bottom-logo">
-						<a class="d-none d-lg-block" href="index.html">
-							<img src="./assets/images/logo.svg" alt="Lorem ipsum dolor sit.">
-						</a>
-						<div class="row">
-							<div class="col-3">
-								<a href="tel:0909090909">
-									<img alt="phone"
-									     class="d-lg-none d-block phone animated tada infinite"
-									     width="22"
-									     src="./assets/images/phone.svg">
-								</a>
-							</div>
-							<div class="col-6 text-center logo">
-								<a class="d-block d-lg-none" href="index.html">
-									<img src="./assets/images/logo-mobile.svg" alt="Lorem ipsum dolor sit.">
-								</a>
-							</div>
-							<div class="col-3">
-								<div id="hamburger" class="hamburger">
-									<span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<div class="header-bottom-navigation">
-						<ul id="hasMenu">
+			<div class="row">
+				<div class="col-md-8 col-lg-6">
+					<div class="header-list">
+						<ul>
 							<li>
-								<a href="index.html">
-									<img src="./assets/images/menu/home-icon.svg" alt="">
-									Trang chủ
+								<a href="#">
+									<i class="fal fa-phone-alt"></i>
+									1900 6634
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="./assets/images/menu/care-service-icon.svg" alt="">
-									Các Dịch vụ
+									<i class="fal fa-clock"></i>
+									Mon - Fri 09:00 - 19:00
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="header-social">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-middle order-3 order-lg-2">
+		<div class="container container-full">
+			<div class="row align-items-center">
+				<div class="col-md-6 col-lg-2 col-4 order-1 order-lg-1">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="./assets/images/logo-text.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-8 order-3 order-lg-2">
+					<div class="header-navigation">
+						<ul id="hasMenu">
+							<li>
+								<a href="index.html">
+									Trang chủ
+								</a>
+							</li>
+							<li>
+								<a href="service.html">
+									Chuyên khoa
+								</a>
+							</li>
+							<li>
+								<a href="service-all.html">
+									Dịch vụ
 									<i class="fal fa-angle-down"></i>
 								</a>
 								<ul>
@@ -155,65 +163,50 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">
-									<img src="./assets/images/menu/health-plans-icon.svg" alt="">
-									Gói chăm sóc
-									<i class="fal fa-angle-down"></i>
-								</a>
-								<ul>
-									<li>
-										<a href="#">
-											Caren Premium
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Gói thai sản
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Dành cho doanh nghiệp
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">
-									<img src="./assets/images/menu/doctor-icon.svg" alt="">
+								<a href="doi-ngu-bac-si.html">
 									Đội ngũ bác sĩ
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="./assets/images/menu/blog-icon.svg" alt="">
+								<a href="danhmucbaiviet.html">
 									Tin tức
 								</a>
 							</li>
+							<li>
+								<a href="javascript:void(0)">
+									Đặt lịch khám
+								</a>
+							</li>
 						</ul>
-						<div class="header-decor d-block d-lg-none">
-							<div class="inner">
-								<p class="title">
-									Bạn cần chúng tôi - Caren hỗ trợ? Liên hệ ngay
-								</p>
-								<div class="text-center">
-									<a href="#popupBooking" class="btn-style btn-light">Đặt hẹn lịch ngay</a>
-								</div>
-							</div>
-						</div>
+						<div class="header-decor d-block d-lg-none"></div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-2 col-8 order-2 order-lg-3 text-right">
+					<div class="header-button">
+						<a href="javascript:;" class="btn-style btn-blue">Tư vấn ngay</a>
+					</div>
+					<div id="hamburger" class="hamburger">
+						<span></span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="header-content d-block d-lg-none">
-		<div class="title">Ưu đãi 200.000đ cho lần khám đầu tiên.</div>
-		<a href="#popupBooking" data-toggle="modal">Đặt hẹn khám ngay</a>
-		<img src="./assets/images/menu/header-plus.svg" alt="">
+	<div class="header-bottom order-2 order-lg-3">
+		<div class="container container-full">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="./assets/images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="header-overlay"></div>
 </header>
-
 <div id="main">
 	<div class="single-blog">
 		<div class="background-child"
@@ -319,79 +312,76 @@
 										<div id="slide-related-blog" class="swiper-container">
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
-													<div class="blogs-item">
-														<div class="card">
-															<a href="single-blog.html">
-																<div class="card-header">
-																	<img class="card-img-top" src="./assets/images/blogs/2.png"
-																	     alt="Dãy số kỳ diệu trong chăm sóc sức khỏe tim mạch chủ động">
-																</div>
-															</a>
-															<div class="card-body">
-																<div class="card-meta">
-																	<ul>
-																		<li>
-																			19 tháng 11, 2020
-																		</li>
-																	</ul>
-																</div>
+													<div class="card card-article">
+														<div class="card-header">
+															<div class="card-image">
 																<a href="single-blog.html">
-																	<h5 class="card-title">Dãy số kỳ diệu trong chăm sóc sức khỏe
-																		tim
-																		mạch chủ động</h5>
+																	<img src="./assets/images/blogs/1.jpg" alt="">
 																</a>
+															</div>
+														</div>
+														<div class="card-body">
+															<div class="card-title">
+																<a href="single-blog.html">
+																	Tin tức 1
+																</a>
+															</div>
+															<div class="card-text">
+																Lorem ipsum dolor sit amet, consectetur adipisicing
+																elit. Aut consequatur debitis
+																earum, error esse eveniet explicabo fuga in ipsam
+																laborum magni mollitia neque,
+																nesciunt nisi numquam provident vitae? Libero, quisquam!
 															</div>
 														</div>
 													</div>
 												</div>
 												<div class="swiper-slide">
-													<div class="blogs-item">
-														<div class="card">
-															<a href="single-blog.html">
-																<div class="card-header">
-																	<img class="card-img-top" src="./assets/images/blogs/2.png"
-																	     alt="Dãy số kỳ diệu trong chăm sóc sức khỏe tim mạch chủ động">
-																</div>
-															</a>
-															<div class="card-body">
-																<div class="card-meta">
-																	<ul>
-																		<li>
-																			19 tháng 11, 2020
-																		</li>
-																	</ul>
-																</div>
+													<div class="card card-article">
+														<div class="card-header">
+															<div class="card-image">
 																<a href="single-blog.html">
-																	<h5 class="card-title">Dãy số kỳ diệu trong chăm sóc sức khỏe
-																		tim
-																		mạch chủ động</h5>
+																	<img src="./assets/images/blogs/1.jpg" alt="">
 																</a>
+															</div>
+														</div>
+														<div class="card-body">
+															<div class="card-title">
+																<a href="single-blog.html">
+																	Tin tức 1
+																</a>
+															</div>
+															<div class="card-text">
+																Lorem ipsum dolor sit amet, consectetur adipisicing
+																elit. Aut consequatur debitis
+																earum, error esse eveniet explicabo fuga in ipsam
+																laborum magni mollitia neque,
+																nesciunt nisi numquam provident vitae? Libero, quisquam!
 															</div>
 														</div>
 													</div>
 												</div>
 												<div class="swiper-slide">
-													<div class="blogs-item">
-														<div class="card">
-															<a href="single-blog.html">
-																<div class="card-header">
-																	<img class="card-img-top" src="./assets/images/blogs/2.png"
-																	     alt="Dãy số kỳ diệu trong chăm sóc sức khỏe tim mạch chủ động">
-																</div>
-															</a>
-															<div class="card-body">
-																<div class="card-meta">
-																	<ul>
-																		<li>
-																			19 tháng 11, 2020
-																		</li>
-																	</ul>
-																</div>
+													<div class="card card-article">
+														<div class="card-header">
+															<div class="card-image">
 																<a href="single-blog.html">
-																	<h5 class="card-title">Dãy số kỳ diệu trong chăm sóc sức khỏe
-																		tim
-																		mạch chủ động</h5>
+																	<img src="./assets/images/blogs/1.jpg" alt="">
 																</a>
+															</div>
+														</div>
+														<div class="card-body">
+															<div class="card-title">
+																<a href="single-blog.html">
+																	Tin tức 1
+																</a>
+															</div>
+															<div class="card-text">
+																Lorem ipsum dolor sit amet, consectetur adipisicing
+																elit. Aut consequatur debitis
+																earum, error esse eveniet explicabo fuga in ipsam
+																laborum magni mollitia neque,
+																nesciunt nisi numquam provident vitae? Libero, quisquam!
 															</div>
 														</div>
 													</div>
@@ -408,136 +398,116 @@
 		</div>
 	</div>
 </div>
+
 <footer class="footer">
-	<div class="container container-full">
-		<div class="row footer-logo">
-			<div class="col-lg-12">
-				<a href="index.html">
-					<img src="./assets/images/logo-white.svg" alt="">
-				</a>
+	<div class="footer-top">
+		<div class="container container-full">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="logo">
+						<a href="index.html">
+							<img src="./assets/images/logo-footer.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="list">
+						<div class="title">
+							Site map
+						</div>
+						<ul>
+							<li>
+								<a href="index.html">
+									Trang chủ
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									Giới thiệu
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									Chuyên khoa
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									Dịch vụ
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									Đội ngũ bác sĩ
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									Liên hệ
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="list list-image">
+						<div class="title">
+							Contact
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									Phòng khám caren <br>
+									Số 652 Lạc Long Quân, Tây Hồ, Hà Nội
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									1900 6634 (Việt Nam)
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									hotro@phongkhamcaren.vn
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="list list-social">
+						<div class="title">
+							Contact with us
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row footer-top">
-			<div class="col-lg-5 col-md-6 order-4 order-lg-1 d-none d-lg-block">
-				<div class="footer-list">
-					<ul>
-						<li>
-							<span>Điện thoại</span><a href="tel:0333851195">0333851195</a>
-						</li>
-						<li>
-							<span>Hotline</span><a href="tel:0333851195">0333851195</a>
-						</li>
-						<li>
-							<span>Email</span><a href="tel:0333851195">support@jiohealth.com</a>
-						</li>
-						<li>
-							<span>Copyright © 2018 Caren. Designed by </span><a
-								href="https://facebook.com/thtan0407">TES</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 order-1 order-lg-2">
-				<p class="title">Dịch vụ</p>
-				<div class="footer-list">
-					<ul>
-						<li>
-							<a href="">Hẹn Bác Sĩ, Điều Dưỡng Đến Nhà</a>
-						</li>
-						<li>
-							<a href="">Nhà Thuốc Trực Tuyến Jio</a>
-						</li>
-						<li>
-							<a href="">Jio Premium</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 order-2 order-lg-3">
-				<p class="title">Tìm hiểu thêm</p>
-				<div class="footer-list">
-					<ul>
-						<li>
-							<a href="">Đội Ngũ Bác Sĩ</a>
-						</li>
-						<li>
-							<a href="">Dịch Vụ Thăm Khám</a>
-						</li>
-						<li>
-							<a href="">Dành cho báo chí</a>
-						</li>
-						<li>
-							<a href="">Vị Trí Tuyển Dụng</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 order-3 order-lg-4">
-				<p class="title">Hỗ trợ khách hàng</p>
-				<div class="footer-list">
-					<ul>
-						<li>
-							<a href="">Câu Hỏi Thường Gặp</a>
-						</li>
-						<li>
-							<a href="">Chính Sách Bảo Mật</a>
-						</li>
-						<li>
-							<a href="">Chính Sách Hoạt Động</a>
-						</li>
-						<li>
-							<a href="">Liên hệ</a>
-						</li>
-						<li>
-							<a href="">Chính sách giải quyết khiếu nại</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row footer-bottom">
-			<div class="col-md-5">
-				<p class="title">CÔNG TY TNHH PHÒNG KHÁM ĐA KHOA Caren</p>
-				<p class="desc">
-					Giấy CNĐKDN 0309145924 đăng ký lần đầu ngày 06/07/2009, đăng ký thay đổi lần thứ 6 ngày 11/09/2019,
-					cấp bởi Sở KHĐT thành phố Hồ Chí Minh.
-				</p>
-			</div>
-			<div class="col-md-4">
-				<p class="title">
-					Địa chỉ
-				</p>
-				<p class="desc">
-					30 Nguyễn Văn Lạc, Phường 19, Quận Bình Thạnh, TP.HCM
-				</p>
-				<p class="title">
-					Hãy theo dõi Caren tại
-				</p>
-				<div class="footer-social">
-					<ul>
-						<li>
-							<a href="">
-								<i class="fab fa-facebook-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="fab fa-youtube"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="footer-register">
-					<a href="">
-						<img src="./assets/images/dathongbao.png" alt="">
-					</a>
+	</div>
+	<div class="footer-bottom">
+		<div class="container container-full">
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="desinged">
+						© 2020 Caren. Design by <a href="#">TES</a>
+					</div>
 				</div>
 			</div>
 		</div>

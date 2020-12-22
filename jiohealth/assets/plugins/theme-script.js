@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	let windowWidth = $(window).width();
 	if (windowWidth < 992) {
-		$(".header .header-bottom-navigation > ul > li > ul").each(function (index) {
+		$(".header .header-navigation > ul > li > ul").each(function (index) {
 			$(this).prev().attr({
 				"href": "#subMenu" + index,
 				"data-toggle": "collapse"
@@ -14,10 +14,8 @@ $(document).ready(function () {
 		})
 	}
 	
-	
-	$('.header .header-bottom-navigation > ul').append('<li><a href="#popupBooking" data-toggle="modal" class="btn-style btn-blue">Đặt hẹn khám ngay</a></li>');
-	$('.header .header-bottom-navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fas fa-times"></i></a></li>');
-	
+	$('.header .header-navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fal fa-times"></i></a></li>');
+	//
 	// Menu
 	function callMenu() {
 		if ($('body').hasClass('show_navigation')) {
@@ -56,35 +54,33 @@ $(document).ready(function () {
 	});
 	
 	if ($('.banner-area').length > 0) {
-		$('.banner-area .owl-carousel').owlCarousel({
-			animateOut: 'slideOutDown',
-			items: 1,
+		let bannerArea = new Swiper('.banner-area .swiper-container', {
 			loop: true,
-			autoplay: true,
-			autoplayTimeout: 10000,
-			autoplayHoverPause: false,
-			dots: false,
-			nav: true,
-			onInitialized: startProgressBar,
-			onTranslate: resetProgressBar,
-			onTranslated: startProgressBar,
-			navText: ["<span><i class='fal fa-angle-left'></i></span>", "<span><i class='fal fa-angle-right'></i></span>"]
+			slidesPerView: 1,
+			autoplay: {
+				delay: 7500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
 		});
-		
-		function startProgressBar() {
-			// apply keyframe animation
-			$(".banner-process").css({
-				width: "100%",
-				transition: "width 10000ms"
-			});
-		}
-		
-		function resetProgressBar() {
-			$(".banner-process").css({
-				width: 0,
-				transition: "width 0s"
-			});
-		}
+	}
+	
+	if ($('.doctors-area').length > 0) {
+		let doctorsArea = new Swiper('.doctors-area .swiper-container', {
+			loop: true,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 7500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		});
 	}
 	
 	if ($('#slide-Doctor').length > 0) {
@@ -134,6 +130,49 @@ $(document).ready(function () {
 				},
 			}
 		});
-		
 	}
+	
+	if ($('.block-review').length > 0) {
+		let doctorsArea = new Swiper('.block-review .swiper-container', {
+			loop: true,
+			margin: 30,
+			slidesPerView: 1,
+			autoplay: {
+				delay: 7500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		});
+	}
+	
+	if ($('.block-info-02').length > 0) {
+		let doctorsArea = new Swiper('.block-info-02 .swiper-container', {
+			loop: true,
+			autoplay: {
+				delay: 7500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3.5,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 4.5,
+					spaceBetween: 10,
+				},
+			}
+		});
+	}
+	
+	$('[data-toggle=tab]').click(function (e) {
+		$('[data-toggle=tab]').removeClass('active');
+	})
 });
