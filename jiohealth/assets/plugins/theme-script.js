@@ -101,9 +101,10 @@ $(document).ready(function () {
 			let link = $(this).find('.owl-item.active .slide-item').data('link');
 			$("#changeLink").prop('href', link);
 		});
-	};
+	}
+	;
 	
-	if($("#slide-related-blog").length > 0) {
+	if ($("#slide-related-blog").length > 0) {
 		let relatedBlog = new Swiper('#slide-related-blog', {
 			loop: true,
 			slidesPerView: 3,

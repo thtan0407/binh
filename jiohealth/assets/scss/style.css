@@ -4694,8 +4694,45 @@ textarea:focus {
 
 .card.card-specialist {
   border-radius: 15px;
-  background: #f3f4ff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #f8f9ff;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 30px 0;
+  position: relative;
+  background: url(../images/doctors/education-bg.svg) left 150px no-repeat;
+}
+.card.card-specialist .card-decor {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .card.card-specialist .card-decor {
+    top: 10px;
+    right: 10px;
+  }
+}
+.card.card-specialist .card-decor img {
+  width: 40px;
+}
+@media screen and (max-width: 768px) {
+  .card.card-specialist .card-decor img {
+    width: 30px;
+  }
+}
+.card.card-specialist .card-decor-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+@media screen and (max-width: 425px) {
+  .card.card-specialist .card-decor-2 {
+    left: 5px;
+    bottom: 5px;
+  }
+}
+.card.card-specialist .card-decor-2 img {
+  width: 40px;
 }
 .card.card-specialist .card-body {
   max-width: 80%;
@@ -4713,7 +4750,7 @@ textarea:focus {
 .card.card-specialist .card-body .card-title > a {
   font-size: 1.3em;
   font-weight: 700;
-  color: #0180C3;
+  color: #016faa;
 }
 .card.card-specialist .card-body .card-text {
   overflow: hidden;
@@ -4736,13 +4773,13 @@ textarea:focus {
   text-align: center;
 }
 .card.card-specialist .card-body .card-bold > a {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 700;
-  color: #232323;
+  color: #016faa;
 }
 @media screen and (max-width: 991px) {
   .card.card-specialist .card-body .card-bold > a {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 .card.card-specialist .card-body .card-list {

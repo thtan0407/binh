@@ -2133,8 +2133,47 @@
 
 .card.card-specialist {
 	border-radius: 15px;
-	background: #f3f4ff;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background: #f8f9ff;
+	border: 0;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+	padding: 30px 0;
+	position: relative;
+	background: url(../images/doctors/education-bg.svg) left 150px no-repeat;
+	
+	
+	.card-decor {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		@media screen and (max-width: 768px) {
+			top: 10px;
+			right: 10px;
+		}
+		
+		
+		img {
+			width: 40px;
+			@media screen and (max-width: 768px) {
+				width: 30px;
+			}
+			
+		}
+	}
+	
+	.card-decor-2 {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		
+		@media screen and (max-width: 425px) {
+			left: 5px;
+			bottom: 5px;
+		}
+		
+		img {
+			width: 40px;
+		}
+	}
 	
 	.card-body {
 		max-width: 80%;
@@ -2151,7 +2190,7 @@
 			> a {
 				font-size: 1.3em;
 				font-weight: 700;
-				color: $color-main
+				color: darken($color-main, 5%);
 			}
 		}
 		
@@ -2172,12 +2211,12 @@
 			text-align: center;
 			
 			> a {
-				font-size: 1.1em;
+				font-size: 1.3em;
 				font-weight: 700;
-				color: #232323;
+				color: darken($color-main, 5%);
 				
 				@media screen and (max-width: 991px) {
-					font-size: 1em;
+					font-size: 1.1em;
 				}
 			}
 		}
