@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+body {
+	font-family: "Nunito Sans", sans-serif;
+	background: #fff;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+a, a:hover, a:focus {
+	box-shadow: none;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	@include transition(.2s all ease-out);
+}
+
+div, p, h1, h2, h3, h4, h5, blockquote, span, img, video {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+input,
+select,
+textarea {
+	@include transition(.2s all ease-out);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+#return-to-top {
+	position: fixed;
+	bottom: 90px;
+	right: 15px;
+	background: $color-main;
+	width: 45px;
+	height: 45px;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	font-size: 1.4rem;
+	z-index: 9999;
+	text-decoration: none;
+	border-radius: 100%;
+	display: none;
+	@include transition(all 0.3s ease);
+	
+	&:hover {
+		line-height: 30px;
+		background: lighten($color-main, 10%);
+	}
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	font-size: unset;
+	margin-left: 0;
+}
+
+.btn-theme {
+	background-image: linear-gradient(to right, $color-blue 50%, $color-hover 100%);
+	background-size: 200% 100% !important;
+	background-position: 0 0;
+	border-radius: 0;
+	color: #fff;
+	line-height: 1;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	@include transition(.2s all ease);
+	
+	&.btn-small {
+		font-size: .85em;
+	}
+	
+	
+	&:focus,
+	&:active,
+	&:hover {
+		outline: none !important;
+		box-shadow: 0 3px 20px rgba(34, 34, 34, .2);
+		color: #fff;
+		text-shadow: 0 1px 2px rgba(34, 34, 34, .2);
+		background-position: 98% 0 !important;
+	}
+}
+
+.btn-light {
+	background-color: #fff;
+	color: #0180C3;
+	font-weight: 700;
+	font-size: 1em;
+	padding: .6em 2.5em;
+	border-radius: 50px;
+	
+	&:hover {
+		color: #014e77;
+		background-color: #fafafa;
+	}
+}
+
+.btn-shadow {
+	box-shadow: 10px 25px 60px #b9becd;
+}
+
+.headline {
+	font-size: 14px;
+	line-height: 1;
+	
+	.sub-headline {
+		font-size: 1.4em;
+		color: $color-main;
+		font-weight: 400;
+	}
+	
+	.title-headline {
+		margin-top: 5px;
+		font-size: 2.6em;
+		color: $color-main;
+		font-weight: 700;
+	}
+	
+	&-button {
+		.btn-theme {
+			padding: 1em 2em;
+			font-size: 1.1em;
+			
+			&:hover {
+				-webkit-transform: translateY(-5px);
+				transform: translateY(-5px);
+			}
+		}
+	}
+}
+
+
+.main-breadcrumb {
+	@include pr;
+	background: #fff;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	
+	@media screen and (max-width: 768px) {
+		margin-top: 15px;
+		height: 100%;
+	}
+	
+	.background {
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-color: transparent;
+		background-size: 100% 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1131px;
+		z-index: 1;
+	}
+	
+	.inner {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 80px;
+		display: flex;
+		justify-content: space-between;
+		
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+		
+		@media screen and (min-width: 768px) {
+			._content {
+				left: 80px;
+				top: auto;
+				width: 30%;
+				padding-top: 0;
+				bottom: 50%;
+				max-width: 550px;
+				position: absolute;
+				z-index: 3;
+			}
+			._image {
+				position: absolute;
+				z-index: 2;
+				right: -30px;
+				top: 0;
+				display: -webkit-box;
+				display: flex;
+				text-align: right;
+				-webkit-box-align: end;
+				align-items: flex-end;
+				
+				img {
+					max-height: 580px;
+					margin-right: 100px;
+					margin-top: 50px;
+					max-width: 800px;
+				}
+			}
+		}
+		
+		@media screen and (max-width: 768px) {
+			._content {
+				padding: 15px;
+			}
+			._image {
+				margin: 20px 0 0;
+				overflow: hidden;
+				display: block;
+				
+				img {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.background-child {
+	width: 100%;
+	height: 230px;
+	padding-top: 50px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+	
+	> .title {
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		font-weight: 900;
+		font-size: 2.2em;
+		color: #fff;
+	}
+}
+
+#main {
+	@include transition(.3s all ease);
+}

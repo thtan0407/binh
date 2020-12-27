@@ -1,0 +1,148 @@
+.footer {
+	margin-top: 50px;
+	background: #E1E8F0;
+	@include transition(.3s all ease);
+	
+	.footer-top {
+		padding: 50px 0 80px;
+		
+		.footer-column {
+			.logo {
+				margin-bottom: 20px;
+				
+				> a {
+					display: inline-block;
+					
+					> img {
+						height: 80px;
+					}
+				}
+			}
+			
+			.text {
+				font-size: 1em;
+				color: #232323;
+				line-height: 1.6;
+			}
+			
+			.title {
+				padding-top: 40px;
+				font-size: 1.6em;
+				font-weight: 600;
+				color: $color-main;
+				margin-bottom: 20px;
+			}
+			
+			.list {
+				a {
+					font-size: 1em;
+					color: #232323;
+					line-height: 1.6;
+				}
+			}
+			
+			.image {
+				img {
+					width: 90%;
+				}
+			}
+			
+			.social {
+				margin-top: 5px;
+				
+				> ul {
+					@include xy-position(center, flex-start);
+					@include list-unstyled;
+					
+					> li {
+						margin-right: 10px;
+						
+						&:last-of-type {
+							margin-right: 0;
+						}
+						
+						> a {
+							box-shadow: 0 0 0 35px $color-blue inset;
+							color: #ffffff;
+							width: 35px;
+							border-radius: 50%;
+							height: 35px;
+							font-size: 1em;
+							@include xy-position(center, center);
+							position: relative;
+							@include transition(.3s all ease);
+							z-index: 2;
+							
+							&:hover {
+								box-shadow: 0 0 0 1px $color-blue inset;
+								background: #fff;
+								color: $color-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.footer-bottom {
+		overflow: hidden;
+		
+		.footer-column--left {
+			height: 60px;
+			@include xy-position(center, flex-start);
+			padding-left: 85px;
+			background: $color-main;
+			
+			@media screen and (max-width: 991px) {
+				@include xy-position(center, center);
+				padding: 0;
+			}
+			
+			.copyright {
+				color: #fff;
+				
+				> a {
+					font-weight: bold;
+					color: #fff;
+					font-size: 1.1em;
+				}
+			}
+		}
+		
+		.footer-column--right {
+			height: 60px;
+			@include xy-position(center, flex-end);
+			background: $color-blue;
+			padding-right: 85px;
+			@media screen and (max-width: 991px) {
+				@include xy-position(center, center);
+				padding: 0;
+			}
+			
+			.list {
+				> ul {
+					@include xy-position(center, flex-end);
+					@include list-unstyled;
+					
+					> li {
+						padding: 10px;
+						
+						> a {
+							display: inline-block;
+							color: #fff;
+							font-size: 1em;
+							@include transition(.2s all ease);
+						}
+						
+						&:hover {
+							> a {
+								opacity: .7;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

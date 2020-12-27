@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Caren</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-language" content="vi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico"/>
+	
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/animate.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+
+<div class="search">
+	<div class="search-main">
+		<form action="">
+			<span>
+				<input type="text" placeholder="Looking for...">
+				<button>
+					<i class="fal fa-search"></i>
+				</button>
+			</span>
+		</form>
+	</div>
+	<div class="search-close">
+		<a href="javascript:void(0)" id="close-search">
+			<i class="fal fa-times"></i>
+		</a>
+	</div>
+</div>
+
+<header class="header">
+	<div class="header-before">
+		<div class="header-top">
+			<div class="container container-full">
+				<div class="row justify-content-lg-end">
+					<div class="col-md-12">
+						<ul>
+							<li class="header-widget header-text">
+								<div class="icon">
+									<i class="fas fa-clock"></i>
+								</div>
+								<div class="text">
+									Thứ 2 - Chủ nhật
+									<span>8:00 - 20:00</span>
+								</div>
+							</li>
+							<li class="header-widget header-text">
+								<div class="icon">
+									<i class="fas fa-map-marker-alt"></i>
+								</div>
+								<div class="text">
+									Địa chỉ
+									<span>Deák Ferenc Street 19, Budapest, Hungary</span>
+								</div>
+							</li>
+							<li class="header-widget header-button">
+								<a href="tel:0909090909" class="btn btn-theme btn-small">
+									<i class="fas fa-phone-alt"></i>
+									0909.090.909
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container container-full">
+				<div class="row align-items-lg-center">
+					<div class="col-md-2">
+						<div class="header-bottom--left">
+							<a href="#">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="header-bottom--middle">
+							<ul>
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="aboutus.html">
+										About us
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Services
+									</a>
+									<ul>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										News
+									</a>
+									<ul>
+										<li>
+											<a href="articles.html">
+												News Category
+											</a>
+										</li>
+										<li>
+											<a href="single-article.html">
+												News Single
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="contact.html">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="header-bottom--right">
+							<ul>
+								<li>
+									<a href="javascript:void(0)" class="open-search">
+										<i class="fas fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-pinterest-p"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="icon-hamburger">
+							<div id="hamburger" class="hamburger">
+								<span></span>
+							</div>
+						</div>
+						<div class="logo-mobile logo-index d-none">
+							<a href="index.html">
+								<img src="./assets/images/logo-white.png" alt="">
+							</a>
+						</div>
+						<div class="logo-mobile logo-page">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-after">
+		<div class="header-logo">
+			<a href="index.html">
+				<img src="./assets/images/logo-white.png" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="hasMenu">
+			<ul>
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="aboutus.html">
+						About us
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						Services
+					</a>
+					<ul>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						News
+					</a>
+					<ul>
+						<li>
+							<a href="articles.html">
+								News Category
+							</a>
+						</li>
+						<li>
+							<a href="single-article.html">
+								News Single
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="contact.html">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-social">
+			<ul>
+				<li>
+					<a href="javascript:void(0)" class="open-search">
+						<i class="fas fa-search"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-info">
+			<ul>
+				<li>
+					<div class="info-item">
+						<div class="info-item--icon">
+							<i class="fas fa-clock"></i>
+						</div>
+						<div class="info-item--content">
+							<div class="title">
+								Thứ 2 - Chủ nhật
+							</div>
+							<div class="desc">
+								8:00 - 20:00
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="info-item">
+						<div class="info-item--icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="info-item--content">
+							<div class="title">
+								Địa chỉ
+							</div>
+							<div class="desc">
+								Deák Ferenc Street 19, Budapest, Hungary
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="info-item">
+						<div class="info-item-button">
+							<a href="#" class="btn btn-theme">
+								<i class="fas fa-phone-alt"></i>
+								0909.090.909
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div id="main">
+	<div class="single-blog">
+		<div class="background-child"
+		     style="background-image: url('./assets/images/breadcrumb/background-child.svg')">
+			<div class="title">
+				Thư viện chuyên khoa
+			</div>
+		</div>
+		<div class="container py-40">
+			<div class="row">
+				<div class="col-12">
+					<div class="main">
+						<div class="category">
+							Nội khoa
+						</div>
+						<div class="title">
+							<h1>Dãy số kỳ diệu trong chăm sóc sức khỏe tim mạch chủ động</h1>
+						</div>
+						<div class="meta">
+							<ul>
+								<li>
+									Lượt xem: 199
+								</li>
+								<li>
+									Administrator
+								</li>
+								<li>
+									19 tháng 11, 2020
+								</li>
+								<li>
+									<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+									     data-width="" data-layout="button" data-action="like" data-size="small"
+									     data-share="true"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="desc">
+							Với dãy số 035 140 530, bạn sẽ nắm được cách quản lý và giữ cho tim mạch của mình ở trạng
+							thái khỏe
+							mạnh
+							và ổn định. Để hiểu rõ hơn về dãy số này, mời bạn cùng xem qua những chia sẻ và hướng dẫn từ
+							TS. BS.
+							Nguyễn Văn Sĩ - Chuyên khoa Nội tại Jio Health.
+						</div>
+						<div class="content">
+							<h5>
+								Tim mạch nguyên nhân gây tử vong hàng đầu trên thế giới
+							</h5>
+							<p>Theo thống kê của tổ chức Y tế thế giới (WHO), ngày nay bệnh lý tim mạch là nguyên nhân
+								gây tử
+								vong
+								hàng
+								đầu trên toàn cầu. Tại Hoa Kỳ, cứ sau 36 giây sẽ có một người tử vong do bệnh lý tim
+								mạch, số ca
+								tử
+								vong
+								do bệnh lý tim mạch lên đến 655.000 ca mỗi năm - tương đương cứ 4 trường hợp bất kỳ tử
+								vong thì
+								có 1
+								trường hợp do nguyên nhân tim mạch, cao gấp nhiều lần so với các nguyên nhân gây tử vong
+								khác.
+							</p>
+							<img src="https://cms.jiohealth.com/content/images/2020/11/H-nh-1.png">
+							<p>Trước đây, bệnh lý tim mạch thường được cho là bệnh của người lớn tuổi, tuy nhiên số ca
+								mắc bệnh
+								tim
+								mạch ngày càng trẻ hóa dần, đặc biệt là bệnh lý <a
+										href="https://jiohealth.com/thong-tin-suc-khoe/tim-mach/tang_huyet_ap">tăng
+									huyết áp</a>;
+								bệnh lý về chuyển hóa như là <a
+										href="https://jiohealth.com/thong-tin-suc-khoe/tieu-duong/mot_so_thong_tin_co_ban_ve_benh_dai_thao_duong">đái
+									tháo đường</a>; rối loạn lipid máu; thừa cân-béo phì, đa phần là do thói quen sinh
+								hoạt hằng
+								ngày thiếu lành mạnh của chính chúng ta mang lại. Và đây cũng là những yếu tố nguy cơ
+								chính yếu
+								có
+								thể dẫn đến những biến cố tim mạch như là nhồi máu cơ tim, <a
+										href="https://pharmacy.jiohealth.com/thuc-pham-chuc-nang-cai-thien-tinh-trang-thieu-mau-nao-nattoenzym-3-vi-x-10-vienhop/p-1403">tai
+									biến mạch máu não</a>, suy tim và bệnh động mạch ngoại biên.</p>
+							<h5>Cải thiện sức khỏe tim mạch bằng dãy số
+								kỳ diệu</h5>
+							<p>Số liệu được đề cập phía trên đã cho chúng ta thấy rằng môi trường nơi chúng ta sống và
+								làm việc,
+								thực phẩm chúng ta dùng hằng ngày, những thói quen và sở thích thiếu lành mạnh đều ẩn
+								chứa những
+								nguy cơ hình thành bệnh lý tim mạch - được mệnh danh là những “sát thủ thầm lặng”.</p>
+							<p><b>Để chăm sóc sức khỏe tim mạch chủ động, hãy nhớ dãy số kỳ diệu: 035 140 530</b></p>
+							<img src="https://cms.jiohealth.com/content/images/2020/11/H-nh-2.2.png">
+						</div>
+						<div class="comment border-top pt-30 mt-30">
+							<div class="_content">
+								<h6 class="subtitle">Bình luận</h6>
+								<div class="fb-comments"
+								     data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+								     data-numposts="5" data-width="100%"></div>
+							</div>
+						</div>
+						<div class="related border-top pt-30 mt-30">
+							<div class="_content">
+								<h6 class="subtitle">Bài viết liên quan</h6>
+								<div class="row">
+									<div class="col-12 mt-30">
+										<div id="slide-related-blog" class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="articles-item">
+														<div class="card">
+															<a href="single-article.html">
+																<div class="card-header">
+																	<img class="card-img-top"
+																	     src="./assets/images/article/1.jpg"
+																	     alt="Ra mắt phòng khám trên nền tảng công nghệ tại TP.HCM">
+																</div>
+															</a>
+															<div class="card-body">
+																<div class="card-meta">
+																	<ul>
+																		<li>
+																			<a href="articles.html">Nội khoa</a>
+																		</li>
+																		<li>
+																			19 tháng 11, 2020
+																		</li>
+																	</ul>
+																</div>
+																<a href="single-article.html">
+																	<h5 class="card-title">Ra mắt phòng khám trên nền
+																		tảng công nghệ
+																		tại
+																		TP.HCM</h5>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="articles-item">
+														<div class="card">
+															<a href="single-article.html">
+																<div class="card-header">
+																	<img class="card-img-top"
+																	     src="./assets/images/article/1.jpg"
+																	     alt="Ra mắt phòng khám trên nền tảng công nghệ tại TP.HCM">
+																</div>
+															</a>
+															<div class="card-body">
+																<div class="card-meta">
+																	<ul>
+																		<li>
+																			<a href="articles.html">Nội khoa</a>
+																		</li>
+																		<li>
+																			19 tháng 11, 2020
+																		</li>
+																	</ul>
+																</div>
+																<a href="single-article.html">
+																	<h5 class="card-title">Ra mắt phòng khám trên nền
+																		tảng công nghệ
+																		tại
+																		TP.HCM</h5>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="articles-item">
+														<div class="card">
+															<a href="single-article.html">
+																<div class="card-header">
+																	<img class="card-img-top"
+																	     src="./assets/images/article/1.jpg"
+																	     alt="Ra mắt phòng khám trên nền tảng công nghệ tại TP.HCM">
+																</div>
+															</a>
+															<div class="card-body">
+																<div class="card-meta">
+																	<ul>
+																		<li>
+																			<a href="articles.html">Nội khoa</a>
+																		</li>
+																		<li>
+																			19 tháng 11, 2020
+																		</li>
+																	</ul>
+																</div>
+																<a href="single-article.html">
+																	<h5 class="card-title">Ra mắt phòng khám trên nền
+																		tảng công nghệ
+																		tại
+																		TP.HCM</h5>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container container-full">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="text">
+							We’re a friendly team of dentists working together to ensure that you receive the best
+							treatment that you require.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							About DentiCare
+						</div>
+						<div class="list">
+							<div class="row">
+								<div class="col-6">
+									<a href="">
+										Our Dental Team
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Pricing & Pricelist
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Our Awards
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Our Solutions
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Dental Services
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Clients
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							Our Awards
+						</div>
+						<div class="image">
+							<img src="./assets/images/footer-awards.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							Social Networks
+						</div>
+						<div class="text">
+							Visit DentiCare on these social links.
+						</div>
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-pinterest-p"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="row no-gutters">
+			<div class="col-lg-6">
+				<div class="footer-column--left">
+					<div class="copyright">
+						Copyright 2020 by ABC. Design by <a href="">Test</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer-column--right">
+					<div class="list">
+						<ul>
+							<li>
+								<a href="aboutus.html">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									About us
+								</a>
+							</li>
+							<li>
+								<a href="service.html">
+									Service
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									News
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/theme-script.js"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0"
+        nonce="bMpej54a"></script>
+
+<a href="javascript:void(0)" id="return-to-top" style="display: none;">
+	<i class="far fa-long-arrow-alt-up"></i>
+</a>
+</body>
+</html>

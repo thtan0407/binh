@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Caren</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-language" content="vi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico"/>
+	
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./assets/plugins/animate.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+<div class="search">
+	<div class="search-main">
+		<form action="">
+			<span>
+				<input type="text" placeholder="Looking for...">
+				<button>
+					<i class="fal fa-search"></i>
+				</button>
+			</span>
+		</form>
+	</div>
+	<div class="search-close">
+		<a href="javascript:void(0)" id="close-search">
+			<i class="fal fa-times"></i>
+		</a>
+	</div>
+</div>
+
+<header class="header">
+	<div class="header-before">
+		<div class="header-top">
+			<div class="container container-full">
+				<div class="row justify-content-lg-end">
+					<div class="col-md-12">
+						<ul>
+							<li class="header-widget header-text">
+								<div class="icon">
+									<i class="fas fa-clock"></i>
+								</div>
+								<div class="text">
+									Thứ 2 - Chủ nhật
+									<span>8:00 - 20:00</span>
+								</div>
+							</li>
+							<li class="header-widget header-text">
+								<div class="icon">
+									<i class="fas fa-map-marker-alt"></i>
+								</div>
+								<div class="text">
+									Địa chỉ
+									<span>Deák Ferenc Street 19, Budapest, Hungary</span>
+								</div>
+							</li>
+							<li class="header-widget header-button">
+								<a href="tel:0909090909" class="btn btn-theme btn-small">
+									<i class="fas fa-phone-alt"></i>
+									0909.090.909
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container container-full">
+				<div class="row align-items-lg-center">
+					<div class="col-md-2">
+						<div class="header-bottom--left">
+							<a href="#">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="header-bottom--middle">
+							<ul>
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="aboutus.html">
+										About us
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Services
+									</a>
+									<ul>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+										<li>
+											<a href="service.html">
+												Service Detail
+											</a>
+										</li>
+										<li>
+											<a href="single-service.html">
+												Service Single
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										News
+									</a>
+									<ul>
+										<li>
+											<a href="articles.html">
+												News Category
+											</a>
+										</li>
+										<li>
+											<a href="single-article.html">
+												News Single
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="contact.html">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="header-bottom--right">
+							<ul>
+								<li>
+									<a href="javascript:void(0)" class="open-search">
+										<i class="fas fa-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-pinterest-p"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="icon-hamburger">
+							<div id="hamburger" class="hamburger">
+								<span></span>
+							</div>
+						</div>
+						<div class="logo-mobile logo-index d-none">
+							<a href="index.html">
+								<img src="./assets/images/logo-white.png" alt="">
+							</a>
+						</div>
+						<div class="logo-mobile logo-page">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-after">
+		<div class="header-logo">
+			<a href="index.html">
+				<img src="./assets/images/logo-white.png" alt="">
+			</a>
+		</div>
+		<div class="header-navigation" id="hasMenu">
+			<ul>
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="aboutus.html">
+						About us
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						Services
+					</a>
+					<ul>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								Service Detail
+							</a>
+						</li>
+						<li>
+							<a href="single-service.html">
+								Service Single
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						News
+					</a>
+					<ul>
+						<li>
+							<a href="articles.html">
+								News Category
+							</a>
+						</li>
+						<li>
+							<a href="single-article.html">
+								News Single
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="contact.html">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-social">
+			<ul>
+				<li>
+					<a href="javascript:void(0)" class="open-search">
+						<i class="fas fa-search"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-info">
+			<ul>
+				<li>
+					<div class="info-item">
+						<div class="info-item--icon">
+							<i class="fas fa-clock"></i>
+						</div>
+						<div class="info-item--content">
+							<div class="title">
+								Thứ 2 - Chủ nhật
+							</div>
+							<div class="desc">
+								8:00 - 20:00
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="info-item">
+						<div class="info-item--icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="info-item--content">
+							<div class="title">
+								Địa chỉ
+							</div>
+							<div class="desc">
+								Deák Ferenc Street 19, Budapest, Hungary
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="info-item">
+						<div class="info-item-button">
+							<a href="#" class="btn btn-theme">
+								<i class="fas fa-phone-alt"></i>
+								0909.090.909
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div id="main">
+	<div class="page-service">
+		<div class="service-bg" style="background-image: url('./assets/images/bg-service.svg')"></div>
+		<div class="service-banner">
+			<div class="service-banner--content">
+				<div class="inner">
+					<a href="index.html">
+						<i class="fal fa-angle-left"></i>
+						Quay về trang chủ
+					</a>
+					<div class="main">
+						<div class="title">
+							<h3>
+								Khoa Da Liễu
+								Thăm Khám Tại Nhà
+							</h3>
+						</div>
+						<div class="separator"></div>
+						<div class="sub-text">
+							Điều trị các bệnh lý về da (mụn, chàm, zona,...) và tư vấn chăm sóc da.
+						</div>
+						<div class="price">
+							<div class="left">
+								<h5>600.000 đ</h5>
+							</div>
+							<div class="right">
+								<a href="">
+									Liên hệ ngay
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="./assets/images/decor-service.svg" alt="">
+			<div class="service-banner-image">
+				<img src="./assets/images/image-service.svg" alt="">
+			</div>
+		</div>
+		<div class="service-box">
+			<div class="container container-full">
+				<div class="row">
+					<div class="col-md-6 col-lg-5 box-content">
+						<div class="decor-1">
+							<img src="./assets/images/teal-plus-icon.svg">
+						</div>
+						<div class="decor-2">
+							<img src="./assets/images/white-plus-icon.svg"></div>
+						<div class="title">
+							Các bác sĩ Jio giúp bạn chẩn đoán & chăm sóc những bệnh lý da liễu sau
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-7 box-list">
+						<div class="row justify-content-center row-5">
+							<div class="col-12 col-md-auto">
+								<div class="item">
+									<img src="./assets/images/check-white-icon.svg">
+									<h3>Mụn trứng cá</h3>
+								</div>
+							</div>
+							<div class="col-12 col-md-auto">
+								<div class="item">
+									<img src="./assets/images/check-white-icon.svg">
+									<h3>Nhiễm trùng da</h3>
+								</div>
+							</div>
+							<div class="col-12 col-md-auto">
+								<div class="item">
+									<img src="./assets/images/check-white-icon.svg">
+									<h3>Vẩy nến</h3>
+								</div>
+							</div>
+							<div class="col-12 col-md-auto">
+								<div class="item">
+									<img src="./assets/images/check-white-icon.svg">
+									<h3>Phòng ngừa ưng thư da</h3>
+								</div>
+							</div>
+							<div class="col-12 col-md-auto">
+								<div class="item">
+									<img src="./assets/images/check-white-icon.svg">
+									<h3>Rối loạn sắc tố da</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-progress">
+			<div class="heading">
+				<div class="container container-full">
+					<div class="row">
+						<div class="col-12">
+							<h2>
+								Quy Trình Thăm Khám
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="item">
+					<div class="container container-full">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="icon">
+									<img src="./assets/images/treatment-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-11">
+								<div class="info">
+									<h6>
+										<span>Bước 1</span>
+										- Kiểm tra tiền sử bệnh án
+									</h6>
+									<p>
+										Các Bác sĩ giàu kinh nghiệm của Jio Health sẽ xem lại tiền sử bệnh án của bạn để
+										nắm rõ tình trạng sức khỏe và các loại thuốc thường dùng trước đây để có thể đưa
+										ra hướng điều trị phù hợp.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container container-full">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="icon">
+									<img src="./assets/images/examine-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-11">
+								<div class="info">
+									<h6>
+										<span>Bước 2</span>
+										- Tiến Hành Khám Lâm Sàng
+									</h6>
+									<p>
+										Các Bác sĩ của Jio Health sẽ khám lâm sàng dựa vào những triệu chứng hiện có
+										chẩn đoán về tình hình sức khỏe của bạn.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container container-full">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="icon">
+									<img src="./assets/images/lab-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-11">
+								<div class="info">
+									<h6>
+										<span>Bước 3</span>
+										- Kê Toa Thuốc & Các Xét Nghiệm Cần Thiết
+									</h6>
+									<p>
+										Kê Toa Thuốc & Các Xét Nghiệm Cần Thiết
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container container-full">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="icon">
+									<img src="./assets/images/personalized-note-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-11">
+								<div class="info">
+									<h6>
+										<span>Bước 4</span>
+										- Cập Nhật Bệnh Án Điện Tử
+									</h6>
+									<p>
+										Sau thăm khám, các Bác sĩ sẽ cập nhật những ghi chú lâm sàng cũng như hồ sơ bệnh
+										án vào ứng dụng Jio Health. Điều này giúp bạn bảo mật thông tin, dễ dàng truy
+										cập và theo dõi bệnh tình mọi lúc mọi nơi.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container container-full">
+						<div class="row">
+							<div class="col-md-1">
+								<div class="icon">
+									<img src="./assets/images/support-icon.svg" alt="">
+								</div>
+							</div>
+							<div class="col-md-11">
+								<div class="info">
+									<h6>
+										<span>Bước 5</span>
+										- Theo Dõi Và Hỗ Trợ
+									</h6>
+									<p>
+										Các Bác sĩ cùng đội ngũ CSKH chuyên nghiệp luôn sẵn sàng giải đáp mọi thắc mắc
+										về sức khỏe ngay trong ứng dụng hoặc qua đường dây nóng.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-footer"
+		     style="background-image: url('./assets/images/footer-service.svg')">
+			<div class="container container-full">
+				<div class="row">
+					<div class="col-12 pt-5 text-center">
+						<div class="_content">
+							<div class="title-white">
+								Liên hệ đặt lịch khám bệnh
+							</div>
+						</div>
+					</div>
+					<div class="col-12 mt-5 text-center">
+						<a href="contact.html" class="btn-style btn-light">
+							Liên hệ ngay
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container container-full">
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="text">
+							We’re a friendly team of dentists working together to ensure that you receive the best
+							treatment that you require.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							About DentiCare
+						</div>
+						<div class="list">
+							<div class="row">
+								<div class="col-6">
+									<a href="">
+										Our Dental Team
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Pricing & Pricelist
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Our Awards
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Our Solutions
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Dental Services
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="">
+										Clients
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							Our Awards
+						</div>
+						<div class="image">
+							<img src="./assets/images/footer-awards.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="footer-column">
+						<div class="title">
+							Social Networks
+						</div>
+						<div class="text">
+							Visit DentiCare on these social links.
+						</div>
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-pinterest-p"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="row no-gutters">
+			<div class="col-lg-6">
+				<div class="footer-column--left">
+					<div class="copyright">
+						Copyright 2020 by ABC. Design by <a href="">Test</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer-column--right">
+					<div class="list">
+						<ul>
+							<li>
+								<a href="aboutus.html">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									About us
+								</a>
+							</li>
+							<li>
+								<a href="service.html">
+									Service
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									News
+								</a>
+							</li>
+							<li>
+								<a href="aboutus.html">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/popper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/theme-script.js"></script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0"
+        nonce="bMpej54a"></script>
+
+<a href="javascript:void(0)" id="return-to-top" style="display: none;">
+	<i class="far fa-long-arrow-alt-up"></i>
+</a>
+</body>
+</html>
